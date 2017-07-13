@@ -37,10 +37,10 @@ namespace comp123_lesson9b
             /// this is hte main construtor for the super hero class
             /// </summary>
             /// <param name="name"></param>
-        public SuperHero(string name)
+        public SuperHero(string name, int karma)
             : base(name)
         {
-
+            this.Karma = karma;
         }
 
         //privaet methods

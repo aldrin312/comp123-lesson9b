@@ -10,11 +10,11 @@ namespace comp123_lesson9b
     {
         static void Main(string[] args)
         {
-            SuperHuman superHuman = new SuperHuman("Super Dude");
-            superHuman.Powers.Add(new Power("Teleportation", 50));
-            superHuman.Powers.Add(new Power("Invisibilty", 30));
-            Console.WriteLine(superHuman.ToString());
-
+            SuperHero superHero = new SuperHero("Super Dude",50);
+            superHero.Powers.Add(new Power("Teleportation", 50));
+            superHero.Powers.Add(new Power("Invisibilty", 30));
+            Console.WriteLine(superHero.ToString());
+            Console.WriteLine("Karam: "+superHero.Karma);
         }
     }
 }
