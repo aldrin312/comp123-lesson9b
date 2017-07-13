@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 /*
  * Name: Aldrin Fernandez
  * Date: July 13, 2017
- * Description: This is an INterface that defubes the karma PRoperty 
- * that must be implemented.
- * Version: - created ihasKarma interface
+ * Description: This is an interface for iHasMalice
+ * Version: - created iHasMalice interface
  */
-
 namespace comp123_lesson9b
 {
-    public interface IHasKarma
+    public interface iHasMalice
     {
-        int Karma { get; set; }
+        int Malice { get; set; }
     }
 }
