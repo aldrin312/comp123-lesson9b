@@ -4,50 +4,93 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/* Name: Aldrin Fernandez
- * Date:July , 2017
- * Description: THis is the superhuman class that  extend the human abstrac class
- *  Version 0.2 - Added the initialize method
- */
-
 namespace comp123_lesson9b
 {
     /// <summary>
-    /// THis is the SuperHuman Class
+    /// This is the SuperHuman sub class.
+    /// It inherits from the Human Superclass.
     /// </summary>
     public class SuperHuman : Human
     {
-
-        //PRIVATE INTANCE VARIABLES(FIELDS)
-
+        // PRIVATE FIELDS
         private List<Power> _powers;
 
+        // PUBLIC PROPERTIES
+        public List<Power> Powers
+        {
+            get
+            {
+                return this._powers; // returns a reference to the Powers List
+            }
+        }
 
-        //PUBLIC PROTPERTIES
 
-        //CONSTRUCTOR----------------------------------------------------------------
-
-        /// <summary>
-        /// This is the main constructor for super human class
-        /// </summary>
-        /// <param name="name"></param>
+        // CONSTRUCTORS
         public SuperHuman(string name)
             : base(name)
         {
             this._initialize();
         }
 
-        //PUBLIC METHIDS
+        // PRIVATE METHODS
 
-            /// <summary>
-            /// this initialize, instantiate and assign values to class
-            /// </summary>
+        /// <summary>
+        /// This method initializes and assigns default values to Class Fields
+        /// </summary>
         private void _initialize()
         {
             this._powers = new List<Power>();
         }
 
+        // PUBLIC METHODS
 
-        //PRIVATE METHODS
+        /// <summary>
+        /// This method adds a Power to the Power List
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
+        public void AddPower(string name, int rank)
+        {
+            this.Powers.Add(new Power(name, rank));
+        }
+
+        public void DisplayPowers()
+        {
+            foreach (var power in Powers)
+            {
+                Console.WriteLine("Name: " + power.Name + " Rank: " + power.Rank);
+            }
+        }
+        /// <summary>
+        /// Overriden the built in TOstring method
+        /// </summary>
+        /// <returns>
+        /// string
+        /// </returns>
+        public override string ToString()
+        {
+            string outputstring = "";
+            outputstring += "=====================================\n";
+            outputstring += "SuperHuman Name: " + this.Name + "\n";
+            outputstring += "======================================\n";
+            foreach (Power power in this.Powers)
+            {
+                outputstring += "======================================\n";
+                outputstring += "Power: " + power.Name + "Rank: " + power.Rank + "\n";
+                outputstring += "======================================\n";
+            }
+
+
+            return outputstring;
+        }
+
+        //public overide
+        /// <summary>
+        /// This is the DisplaySKills method
+        /// </summary>
+        public override void DisplaySkills()
+        {
+            Console.WriteLine("Not Implemented");
+        }
     }
 }

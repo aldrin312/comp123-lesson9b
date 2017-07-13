@@ -3,27 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-    /* Name: Aldrin Fernandez
-     * Date:July , 2017
-     * Description: THis is the human abstract class
-     *  Version 0.1 - Create power class
-     */
+
 namespace comp123_lesson9b
 {
     /// <summary>
-    /// This is a Power Class that will be used as a Data type
+    /// The Power class contains the data and structure of the each Super Power.
     /// </summary>
-    class Power
+    public class Power
     {
-        //PRIVATE INTANCE VARIABLES
-
-        //PUBLIC PROTPERTIES
+        // PUBLIC PROPERTIES
         public string Name { get; set; }
         public int Rank { get; set; }
-        //CONSTRUCTOR----------------------------------------------------------------
 
-        //PUBLIC METHIDS
+        // CONSTRUCTORS -----------------------------------------
 
-        //PRIVATE METHODS
+        /// <summary>
+        /// This is the Power construtor.
+        /// Takes two parameters - name (string) - rank (int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
+        public Power(string name, int rank)
+        {
+            this.Name = name;
+            this.Rank = rank;
+        }
     }
 }

@@ -3,48 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-/* Name: Aldrin Fernandez
- * Date:July , 2017
- * Description: THis is the human abstract class
- *  Version 0.1 - Create human abstract class
- */
+
 namespace comp123_lesson9b
 {
     /// <summary>
-    ///  This is the human abstract class
+    /// This is the Human Abstract class
     /// </summary>
     public abstract class Human
     {
-
-        //PRIVATE INTANCE VARIABLES(FIELDS)
+        // PRIVATE FIELDS (INSTANCE VARIABLES)
         private string _name;
 
-
-        //PUBLIC PROTPERTIES
+        // PUBLIC PROPERTIES -----------------------------------------
         public string Name
         {
             get
             {
                 return this._name;
             }
+
             set
             {
                 this._name = value;
             }
         }
-        //CONSTRUCTOR----------------------------------------------------------------
 
-            /// <summary>
-            /// this is the main constructor
-            /// it takes pme [ara,eter - name (string)
-            /// </summary>
-            /// <param name="name"></param>
+        // CONSTRUCTORS -----------------------------------------------
+
+        /// <summary>
+        /// This is the constructor for the Human abstract class.
+        /// It requires one parameter - name (string).
+        /// </summary>
+        /// <param name="name"></param>
         public Human(string name)
         {
             this.Name = name;
         }
-        //PUBLIC METHIDS
 
-        //PRIVATE METHODS
+        // PUBLIC ABSTRAC TMETHOD
+        public abstract void DisplaySkills();
     }
+    
 }
