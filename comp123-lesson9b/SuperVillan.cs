@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name: Aldrin Fernandez
  * Date: July 13, 2017
  * Description: This is supeVillain class that inherits from superhero class and implement the iHasMalice interface
- * Version: 0.3 - created supervillain class
+ * Version: - created supervillain class
  */
 namespace comp123_lesson9b
 {
