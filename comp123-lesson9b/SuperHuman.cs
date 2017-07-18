@@ -70,19 +70,35 @@ namespace comp123_lesson9b
         public override string ToString()
         {
             string outputstring = "";
-            outputstring += "=====================================\n";
-            outputstring += "SuperHuman Name: " + this.Name + "\n";
             outputstring += "======================================\n";
-            foreach (Power power in this.Powers)
+            outputstring += "SuperHuman Name: " + this.Name + "\n";
+			outputstring += "======================================\n";
+			foreach (Power power in this.Powers)
             {
-                outputstring += "======================================\n";
                 outputstring += "Power: " + power.Name + "Rank: " + power.Rank + "\n";
-                outputstring += "======================================\n";
+                
             }
-
-
+			outputstring += "======================================\n";
             return outputstring;
         }
+
+		public int _getPowerIndex(string name)
+		{
+			int index = 0;
+			foreach (Power power in this.Powers) {
+				if (name.Equals(power.Name))
+				{
+					break;
+				}
+				index++;
+				if (this.Powers.Count == index)
+				{
+					index = -1; // this means that we did not find the power in the list
+				}
+			}
+
+			return index;
+		}
 
         //public overide
         /// <summary>

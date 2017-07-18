@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+// version- overloaded the > and < operator for the power
 namespace comp123_lesson9b
 {
     /// <summary>
@@ -29,5 +29,33 @@ namespace comp123_lesson9b
             this.Name = name;
             this.Rank = rank;
         }
-    }
+
+
+		//overlaoded operators
+
+		/// <summary>
+		/// This method overlaids the > for use with the power class
+		/// </summary>
+		/// <param name="lhs"></param>
+		/// <param name="rhs"></param>
+		/// <returns></returns>
+		public static bool operator >(Power lhs, Power rhs)
+		{
+			return (lhs.Rank > rhs.Rank);
+		}
+
+
+		/// <summary>
+		/// This method overlaids the < for use with the power class
+		/// </summary>
+		/// <param name="lhs"></param>
+		/// <param name="rhs"></param>
+		/// <returns></returns>
+		public static bool operator <(Power lhs, Power rhs)
+		{
+			return (lhs.Rank < rhs.Rank);
+
+		}
+
+	}
 }
