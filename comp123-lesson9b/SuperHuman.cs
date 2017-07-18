@@ -82,7 +82,13 @@ namespace comp123_lesson9b
             return outputstring;
         }
 
-		public int _getPowerIndex(string name)
+		/// <summary>
+		/// thi spirvate method returns the index of the pweor name in the power list
+		/// if not found , returns -1
+		/// </summary>
+		/// <param name="name"></param>
+		/// <returns>Returns the index of tge ower ub tge power list by name</returns>
+		private int _getPowerIndex(string name)
 		{
 			int index = 0;
 			foreach (Power power in this.Powers) {

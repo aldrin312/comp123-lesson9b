@@ -57,7 +57,7 @@ namespace comp123_lesson9b
 				Console.WriteLine("superHero has Karma");
 			}
 
-
+			Console.WriteLine(superVillain._getPowerIndex("Spider senses")); 
 
 
 
