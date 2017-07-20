@@ -51,7 +51,8 @@ namespace comp123_lesson9b
 		public AntiHero(string name, int karma, int malice) 
 			: base(name)
 		{
-
+			this.Karma = karma;
+			this.Malice = malice;
 		}
 
 		

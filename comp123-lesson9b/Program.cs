@@ -29,7 +29,7 @@ namespace comp123_lesson9b
             Console.WriteLine(superVillain.ToString());
             Console.WriteLine("Malice: " + superVillain.Malice);
 
-
+			/*
 			if (superHero is Human)
 			{
 				Console.WriteLine("superHero is a Human");
@@ -56,8 +56,18 @@ namespace comp123_lesson9b
 			{
 				Console.WriteLine("superHero has Karma");
 			}
+			*/
 
 			//Console.WriteLine(superVillain._getPowerIndex("Spider senses")); 
+
+
+			AntiHero batman = new AntiHero("Batman", 20, 20);
+			batman.AddPower("Super Intelligence", 60);
+			Console.WriteLine(batman.ToString());
+			Console.WriteLine("Karma: " + batman.Karma);
+			Console.WriteLine("Malice: " + batman.Malice);
+			Console.WriteLine();
+
 
 			if (superVillain.GetPower("Flight") > superVillain.GetPower("Mind Control"))
 			{
