@@ -42,6 +42,8 @@ namespace comp123_lesson9b
 
         // PUBLIC ABSTRAC TMETHOD
         public abstract void DisplaySkills();
+
+		public abstract void Trains();
     }
     
 }

@@ -10,7 +10,7 @@ using System.Text;
  */
 namespace comp123_lesson9b
 {
-	public class AntiHero : SuperHuman, IHasKarma, iHasMalice, ITrainable
+	public class AntiHero : SuperHuman, IHasKarma, iHasMalice
 	{
 		//PRIVATE INTANCE VARIABLES
 		private int _karma;
@@ -56,10 +56,12 @@ namespace comp123_lesson9b
 		}
 
 
-		public void Train()
+		
+		public  override void Trains()
 		{
-			Console.WriteLine("Not Implemented");
+			Console.WriteLine("Not implemented");
 		}
+		
 
 
 

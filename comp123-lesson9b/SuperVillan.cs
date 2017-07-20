@@ -34,10 +34,12 @@ namespace comp123_lesson9b
             this.Malice = malice;
         }
 
-		public void Train()
+		
+		public  override void Trains()
 		{
 			Console.WriteLine("Not implemented");
 		}
+		
 
 		//constructor
 

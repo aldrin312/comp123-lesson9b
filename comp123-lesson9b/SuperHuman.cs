@@ -105,7 +105,12 @@ namespace comp123_lesson9b
 
 			return index;
 		}
-
+		
+		public override void Trains()
+		{
+			Console.WriteLine("To be Implemented in the sub class");
+		}
+		
         //public overide
         /// <summary>
         /// This is the DisplaySKills method
