@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace comp123_lesson9b
 {
 
-    class SuperHero : SuperHuman, IHasKarma
+    public sealed class SuperHero : SuperHuman, IHasKarma
     {
         // pirvate instancce variables or fields
         private int _karma;

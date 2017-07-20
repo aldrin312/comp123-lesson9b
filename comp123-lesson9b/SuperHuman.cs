@@ -114,5 +114,24 @@ namespace comp123_lesson9b
         {
             Console.WriteLine("Not Implemented");
         }
+
+
+		/// <summary>
+		/// this method returns a power that matches the pawer name
+		/// if the power is not found, returns an anonymous power object with "power not found" with a rank of 0
+		/// </summary>
+		/// <param name="name"></param>
+		/// <returns></returns>
+		public Power GetPower(string name)
+		{
+			int index = _getPowerIndex(name);
+
+			if( index != -1)
+			{
+				return this.Powers[index];
+			}
+			return new Power("Power Not Found", 0);
+			
+		}
     }
 }

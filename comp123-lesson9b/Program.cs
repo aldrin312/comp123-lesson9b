@@ -57,9 +57,21 @@ namespace comp123_lesson9b
 				Console.WriteLine("superHero has Karma");
 			}
 
-			Console.WriteLine(superVillain._getPowerIndex("Spider senses")); 
+			//Console.WriteLine(superVillain._getPowerIndex("Spider senses")); 
 
+			if (superVillain.GetPower("Flight") > superVillain.GetPower("Mind Control"))
+			{
+				Console.WriteLine("Flight is greater than Mind Control");
+			}
 
+			if (superVillain.GetPower("Telekinisis") > superVillain.GetPower("Flight"))
+			{
+				Console.WriteLine("Telekinis is greater than Flight");
+			}
+			else
+			{
+				Console.WriteLine("Telekinis is lesser than Flight");
+			}
 
 		}
     }
