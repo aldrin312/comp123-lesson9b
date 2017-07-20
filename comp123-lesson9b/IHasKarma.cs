@@ -15,6 +15,8 @@ namespace comp123_lesson9b
 {
     public interface IHasKarma
     {
+
         int Karma { get; set; }
+
     }
 }

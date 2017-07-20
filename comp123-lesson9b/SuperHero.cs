@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace comp123_lesson9b
 {
 
-    public sealed class SuperHero : SuperHuman, IHasKarma
+    public sealed class SuperHero : SuperHuman, IHasKarma, ITrainable
     {
         // pirvate instancce variables or fields
         private int _karma;
@@ -43,6 +43,10 @@ namespace comp123_lesson9b
             this.Karma = karma;
         }
 
+		public void Train()
+		{
+			Console.WriteLine("Not implemented");
+		}
         //privaet methods
 
         //publ2ic methods

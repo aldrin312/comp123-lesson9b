@@ -34,7 +34,12 @@ namespace comp123_lesson9b
             this.Malice = malice;
         }
 
-        //constructor
+		public void Train()
+		{
+			Console.WriteLine("Not implemented");
+		}
 
-    }
+		//constructor
+
+	}
 }

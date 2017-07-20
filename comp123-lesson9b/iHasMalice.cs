@@ -14,6 +14,10 @@ namespace comp123_lesson9b
 {
     public interface iHasMalice
     {
+		// public properties
         int Malice { get; set; }
+
+		// public methods
+
     }
 }
